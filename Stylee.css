@@ -30,9 +30,13 @@
 *{
     box-sizing: border-box;
 }
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: Roboto;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     font-size: 14px;
    
@@ -44,13 +48,23 @@ body{
    
    
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 header .conteiner{
     display: flex;
-    margin-top: -7px;
+   
+}
+.li-bar{
+    margin-right: 50px;
 }
 
 .logos{
     display: flex;
+    margin-top: 5px;
+
     
     
 }
@@ -60,17 +74,15 @@ header .conteiner{
 }
 .block{
     width: 270px;
-    height: 100px;
+    
 
   
 }
 .nav-flex{
-    margin-left: 200px;
+    margin-left: 370px;
 }
 
-.nav-bar{
-    margin-right: 53px;
-}
+
 .block:not(:last-child){
     margin-right: 30px;
 }
@@ -85,7 +97,7 @@ header .conteiner{
     line-height: 31px;
     /* identical to box height */
     margin-right: 97px;
-    margin-top: 7px;
+    
     color: #2196F3;}
   
     
@@ -103,7 +115,7 @@ header .conteiner{
         }
     .header-nav{
         padding: 25px 0 ;
-        height: 80px;
+        
         
         
     }
@@ -114,6 +126,9 @@ header .conteiner{
     }
     .img-picture{
         margin-right: 30px;
+    }
+    .img-picture:last-child{
+        margin-right: 0;
     }
     
     .upper-contact-info{
@@ -127,10 +142,7 @@ header .conteiner{
         
     
         
-    .words-btn{
-        padding: 200px 0;
-        
-    }
+    
     .people{
         display: flex;
         padding-left: 0;
@@ -143,7 +155,7 @@ header .conteiner{
         flex-direction: column;
         text-align: center;
         width: 270px;
-        height: 368px;
+       
      
     }
     .people-list:not(:last-child){
@@ -151,15 +163,10 @@ header .conteiner{
     }
     .block-port{
         width: 370px;
-        height: 404px;
-        margin-right: 30px;
-        margin-bottom: 30px;
+      
     }
-    
 
-   .port{
-    margin-right: 0;
-   }
+   
     
     .main-words{
         width: 695px;
@@ -168,24 +175,24 @@ header .conteiner{
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
-        line-height: 136%;
+        line-height: 1.36;
         /* or 136% */
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        margin: 0 auto;
+        margin: 0 auto 30px;
         
         color: #FFFFFF;}
         
         .first-btn{
-        margin: 30px auto ;
-        padding: 10px 20px;
+        margin: 0 auto ;
+        padding: 25px 30px;
           
             font-family: inherit;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
-            line-height: 188%;
+            line-height: 1.88%;
             /* identical to box height, or 188% */
             display: flex;
             align-items: center;
@@ -207,12 +214,14 @@ header .conteiner{
         
     }
     .first-bg{
-           
+
+           padding-top: 200px;
+           padding-bottom: 200px;
         
         background: #2F303A;
                 }
         .section-headers{
-           
+           margin-bottom: 15px;
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
@@ -235,7 +244,7 @@ header .conteiner{
         }
         
         .headers{
-            margin: 50px 0;
+           margin-bottom: 50px;
             font-style: normal;
             font-weight: 700;
             font-size: 36px;
@@ -247,8 +256,9 @@ header .conteiner{
         .second-bg{background: #F5F4FA;}
   footer{
             background: #2F303A;
-        padding: 60px 0;
-    height:  252px;      }
+            padding: 60px 0;
+            height:  252px;    
+  }
         .down-adress{
             font-style: normal;
             
@@ -275,11 +285,9 @@ address ul {
 .footer-flex{
     display: flex;
     flex-direction: column;
-}
-.adress-google{
+    gap: 3px;
     width: 231px;
 }
-
 
    
 .btn-colors-portfolio{
@@ -291,7 +299,7 @@ address ul {
     font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 162%;
+line-height: 1.62;
 /* identical to box height, or 162% */
 
 
@@ -299,17 +307,14 @@ padding: 6px 33px;
 
 border-radius: 4px;
 }
-.btn-colors-portfolio{
-    margin-right: 8px;
-    
-}
+
 
 
 .btn-list{
     margin: 0 0 50px;
     display: flex;
     justify-content: center;
-    
+    gap: 8px;
     
     
 }
@@ -317,43 +322,45 @@ border-radius: 4px;
     color: #FFFFFF;
     background-color: #2196F3;
 }
+.portfolio-header{
+    border-bottom: 1px solid #ECECEC;
+}
 .portfolio-img-header{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 200%;
+    line-height: 2.00;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    margin: 15px 24px 0px;
+   
     color: #212121;}
     .portfolio-img-prop{
         font-style: normal;
        
         font-size: 16px;
-        line-height: 188%;
+        line-height: 1.88;
         /* identical to box height, or 188% */
        
-        margin: 0px 24px 20px;
+       
         color: #757575;
         }
         .portfolio-list{
             display: flex;
-            width: 1170px;
+           
             flex-wrap: wrap;
             padding-left: 0;
-            
+            gap: 30px;
         }
-        
+        .position-img{
+            border: 1px solid #ececec;
+            padding: 20px 24px;
+            border-top: none;
+        }
         .hide{
             display: none;
         }
-        .portfolio-main{
-            border: 1px solid #ECECEC;
-        }
-        .block-port{
-            border: 1px solid #ECECEC;
-            width: 370px;
-            height: 404px;}
+        
+        
         .studio-img-header{
             font-style: normal;
             font-weight: 500;
@@ -367,7 +374,7 @@ border-radius: 4px;
             color: #212121;}
             .studio-img-prop{
                 font-style: normal;
-                
+                padding-bottom: 30px;
                 font-size: 16px;
                 line-height: 19px;
                 /* identical to box height */
@@ -375,4 +382,8 @@ border-radius: 4px;
                 
                 
                 color: #757575;}
-                
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
