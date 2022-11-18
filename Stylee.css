@@ -63,10 +63,14 @@ header .conteiner{
 
 .logos{
     display: flex;
-    margin-top: 5px;
+   
 
     
     
+}
+.upper-logos{
+    margin-top: 5px;
+
 }
 
 .info{
